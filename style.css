@@ -1,0 +1,58 @@
+:root{
+  --bg: #121212;
+  --panel: #1d1d1d;
+  --text: #eaeaea;
+  --accent: #ffd86b;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.hud{
+  width:640px;
+  margin-bottom:8px;
+  background:var(--panel);
+  padding:8px 10px;
+  border-radius:6px;
+  text-align:left;
+}
+
+#timer{font-weight:bold;}
+#announcement{
+  margin-top:6px;
+  font-size:18px;
+  color:var(--accent);
+  font-weight:700;
+}
+
+.canvas-wrap{position:relative}
+canvas{
+  image-rendering: pixelated; /* bantu tampilan pixel */
+  background:#0b0b0b;
+  border:3px solid #2b2b2b;
+  display:block;
+}
+.hp-row{
+  display:flex;
+  gap:8px;
+  margin-top:6px;
+}
+.hp-box{
+  padding:4px 8px;
+  background:#0f0f0f;
+  border:1px solid #2b2b2b;
+  border-radius:4px;
+  min-width:130px;
+  font-size:14px;
+}
+.controls{margin-top:6px;font-size:12px;color:#bdbdbd}
